@@ -232,3 +232,11 @@ input {
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
+
+.footer {
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+}

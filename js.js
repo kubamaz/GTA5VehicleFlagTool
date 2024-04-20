@@ -132,10 +132,10 @@ async function fetchFlagTable(key, url) {
 }
 
 async function fetchAllFlagTables() {
-    if (!flagTables["default"]) await fetchFlagTable("default", "https://raw.githubusercontent.com/adam10603/GTAVFlags/main/flags.json");
+    if (!flagTables["default"]) await fetchFlagTable("default", "https://raw.githubusercontent.com/kubamaz/GTA5VehicleFlagTool/master/GTA5flags.json");
     if (!flagTables["default"]) throw new Error("Failed to load a flag lookup table. Retrying ...");
 
-    if (!flagTables["ikt"]) await fetchFlagTable("ikt", "https://raw.githubusercontent.com/E66666666/GTAVHandlingInfo/master/flags.json");
+    if (!flagTables["ikt"]) await fetchFlagTable("ikt", "https://raw.githubusercontent.com/kubamaz/GTA5VehicleFlagTool/master/GTA5HAndlingflags.json");
     if (!flagTables["ikt"]) throw new Error("Failed to load a flag lookup table. Retrying ...");
 }
 
